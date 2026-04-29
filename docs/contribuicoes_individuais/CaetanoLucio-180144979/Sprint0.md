@@ -24,7 +24,7 @@ Sprint 0 foi dedicada à consolidação da arquitetura de base do projeto. As at
 | 13/04 | Análise do repositório modelo (GCES-OPPIA-relatorios)                               | Estudo | [GCES-OPPIA-relatorios](https://github.com/LuizaMaluf/GCES-OPPIA-relatorios)      | Concluído |
 | 13/04 | Criação da estrutura de pastas do novo repositório                                  | Doc    | [GCES-Kdenlive-relatorios](https://github.com/caeslucio/GCES-Kdenlive-relatorios) | Concluído |
 | 13/04 | Estruturação inicial do repositório, configuração do CI/CD e criação de templates   | Doc    | Vários arquivos                                                                   | Concluído |
-| 14/04 | Preenchimento inicial de diários e formulação dos guias de contribuição             | Doc    | [materiais/](../../materiais/)                                                    | Concluído |
+| 14/04 | Preenchimento inicial de diários e formulação dos guias de contribuição             | Doc    | [materiais/](../../materiais/como-abrir-mr.md)                                    | Concluído |
 | 17/04 | Estudo de regras de contribuição, registro de conta KDE e clone do repositório base | Dev    | Repositório local e KDE Invent                                                    | Concluído |
 | 21/04 | Refatoração estrutural do MkDocs, revisão de conectividade e aprimoramento UI/UX    | Dev/QA | Vários arquivos                                                                   | Concluído |
 
