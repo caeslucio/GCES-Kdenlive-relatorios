@@ -336,3 +336,10 @@ O Merge Request [!864](https://invent.kde.org/multimedia/kdenlive/-/merge_reques
 | Refatoração e correção dos bugs | — | ✅ |
 | Solução final e cobertura completa | ✅ | — |
 | Submissão do Merge Request | ✅ | ✅ |
+
+---
+
+## Plano Pessoal para a Próxima Sprint (Sprint 2)
+ 
+- [ ] Identificar e abrir mais uma issue.
+- [ ] Atualizar contribuição conforme a comunidade e revisores.
