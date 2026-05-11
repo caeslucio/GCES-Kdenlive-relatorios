@@ -29,9 +29,9 @@ A Sprint 0 teve como foco a imersão no ecossistema KDE e a preparação inicial
 
 | Entrega | Status | Link/Referência | Observações |
 | :--- | :--- | :--- | :--- |
-| **Portal MkDocs** | ✅ Concluído | [Link do Repo/Pages] | Estrutura com CI/CD para publicação automática. |
-| **Fork & Clone** | ✅ Concluído | [Link do seu fork no invent] | Base de código sincronizada para desenvolvimento local. |
-| **Guia de Contribuição** | ✅ Concluído | [/materiais/guia_contribuicao.md] | Documentação baseada nas normas do Kdenlive. |
+| **Portal MkDocs** | ✅ Concluído | https://caeslucio.github.io/GCES-Kdenlive-relatorios/ | Estrutura com CI/CD para publicação automática. |
+| **Fork & Clone** | ✅ Concluído | https://invent.kde.org/juliamassuda/kdenlive | Base de código sincronizada para desenvolvimento local. |
+| **Guia de Contribuição** | ✅ Concluído | https://github.com/caeslucio/GCES-Kdenlive-relatorios/tree/main/docs/contribuicoes_individuais | Documentação individual de cada participante. |
 
 ---
 
@@ -42,6 +42,7 @@ A Sprint 0 teve como foco a imersão no ecossistema KDE e a preparação inicial
 | 14/04 | Alinhamento do fluxo de trabalho e estudo da arquitetura | Estudo/Gestão | ✅ |
 | 16/04 | Criação de conta KDE Identity e validação de acessos | Outro | ✅ |
 | 18/04 | Revisão da infraestrutura de documentação (MkDocs) | Doc | ✅ |
+| 18/04 | Criação do fork e atualização do MkDocs com o conteúdo da Sprint 0 | Doc | ✅ |
 | 20/04 | Setup do ambiente local com Craft e build inicial | Ambiente | ✅ |
 
 ---
