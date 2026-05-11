@@ -45,7 +45,7 @@ Site: [https://kdenlive.org/](https://kdenlive.org/)
 | Caetano Santos Lucio             | 180144979 | [@caeslucio](https://github.com/caeslucio) | [@caeslucio](https://invent.kde.org/caeslucio) |
 | Davi Rodrigues Nunes             | 232014413 | [@davirnunes](https://github.com/davirnunes)| [@davirnunes](https://invent.kde.org/davirnunes)| 
 | Julia dos Reis Teixeira Massuda  | 231035150 | [@JuliaReis18](https://github.com/JuliaReis18)| [@juliamassuda](https://invent.kde.org/juliamassuda)|
-| João Pedro Rodrigues             | 231026966 | –                                          | –                                              |
+| João Pedro Rodrigues             | 231026966 | [@JpRodrigues2](https://github.com/JpRodrigues2)| [@joaorodrigues](https://invent.kde.org/joaorodrigues) |
 | Karolina Vieira Barbosa          | 202045820 | [@Karolina91](https://github.com/Karolina91)|  [@karovieira](https://invent.kde.org/karovieira)                                          |
 | Letícia da Silva Monteiro        | 231026859 | [@LetíciaMonteiro](https://github.com/LeticiaMonteiroo) | –                                              |
 | Lucas Mendonça Arruda            | 231035464 | [@lucasarruda9](https://github.com/lucasarruda9) | [@lucasma](https://invent.kde.org/lucasma)                                              |
