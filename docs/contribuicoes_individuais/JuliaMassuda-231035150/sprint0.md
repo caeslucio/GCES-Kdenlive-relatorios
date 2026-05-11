@@ -30,7 +30,7 @@ A Sprint 0 teve como foco a imersão no ecossistema KDE e a preparação inicial
 | Entrega | Status | Link/Referência | Observações |
 | :--- | :--- | :--- | :--- |
 | **Portal MkDocs** | ✅ Concluído | https://caeslucio.github.io/GCES-Kdenlive-relatorios/ | Estrutura com CI/CD para publicação automática. |
-| **Fork & Clone** | ✅ Concluído | https://github.com/JuliaReis18/GCES-Kdenlive-relatorios | Base de código sincronizada para desenvolvimento local. |
+| **Fork & Clone** | ✅ Concluído | https://invent.kde.org/juliamassuda/kdenlive | Base de código sincronizada para desenvolvimento local. |
 | **Guia de Contribuição** | ✅ Concluído | https://github.com/caeslucio/GCES-Kdenlive-relatorios/tree/main/docs/contribuicoes_individuais | Documentação individual de cada participante. |
 
 ---
