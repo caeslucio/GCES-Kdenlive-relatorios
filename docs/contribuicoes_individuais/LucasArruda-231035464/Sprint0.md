@@ -23,10 +23,10 @@ O projeto possui uma separação entre:
 Tentei realizar o build inicialmente no Ubuntu 22.04, mas a versão era inferior à exigida para as dependências atuais (Ubuntu 25.10). Explorei o Craft e o KDE-Builder, mas ambos apresentaram falhas críticas de configuração. No caso do Craft, o processo era interrompido por um erro 404 ao tentar acessar o repositório do plugin bigSh0t; mesmo corrigindo manualmente o link para o repositório oficial, a ferramenta falhava ao tentar buscar a branch master, que havia sido renomeada para main no novo destino. Já o KDE-Builder falhou devido a conflitos de versão no sistema base. A solução definitiva foi subir um container Ubuntu Rolling (25.04) via Docker, onde instalei manualmente todas as dependências de Qt6, KF6 e MLT necessárias para a compilação.
 
 
-![Tela do Kdelive após Build correta 1](../../assets/contribuicoes_individuais/sprint0/build_rodando1.png)
+![Tela do Kdelive após Build correta 1](../../assets/contribuicoes_individuais/lucas/sprint0/build_rodando1.png)
 *Figura 1: Tela do Kdenlive após Build correta.*
 
-![Tela do Kdelive após Build 2](../../assets/contribuicoes_individuais/sprint0/build_rodando2.png)
+![Tela do Kdelive após Build 2](../../assets/contribuicoes_individuais/lucas/sprint0/build_rodando2.png)
 *Figura 2: Tela de edição do Kdelive.*
 
 **Comando de execução com display via Docker:**
@@ -103,20 +103,20 @@ O projeto possui aproximadamente 55 labels adicionais usadas para categorizar o 
 
 E dentre muitas outras. Essas labels ajudam a organizar o desenvolvimento do Kdenlive, facilitando a triagem, priorização e distribuição das tarefas dentro da comunidade.
 
-![Imagem das Labels](../../assets/contribuicoes_individuais/sprint0/labels.png)
+![Imagem das Labels](../../assets/contribuicoes_individuais/lucas/sprint0/labels.png)
 *Figura 3: Tela de labels*
 
 ## 2. Atividades Realizadas
 
-| Data  | Atividade                                   | Tipo | Referência | Status    |
-| ----- | ------------------------------------------- | --------------------------------- | --------------- | --------- |
-| 10/04/2026 | Estudo da arquitetura do Kdenlive | Estudo| [Link](https://invent.kde.org/lucasma/kdenlive/-/blob/master/dev-docs/architecture.md) | Concluído |
-| 11/04/2026 | Criação de conta no Invent.kde | Outro | [Link](https://invent.kde.org/lucasma) | Concluído |
-| 13/04/2026 | Criação do Fork do repositório | Código | [Link](https://invent.kde.org/lucasma/kdenlive) | Concluído |
-| 14/04/2026 | Mapeamento de canais de comunicação e devs | Estudo | [Link](https://develop.kde.org/docs/getting-started/building/help-developers/) | Concluído |
-| 16/04/2026 | Estudo do Guia de Contribuição e Build | Estudo | [Link contribuição](https://develop.kde.org/docs/getting-started/building/help-developers/) [Link Buld](https://invent.kde.org/multimedia/kdenlive/-/blob/master/dev-docs/build.md?ref_type=heads)| Concluído |
-| 21/04/2026 | Compilação e execução bem-sucedida via Docker | Código | [Link build](https://invent.kde.org/multimedia/kdenlive/-/blob/master/dev-docs/build.md?ref_type=heads) | Concluído |
-| 21/04/2026 | Documentação do Diário de Bordo Sprint 0 | Documentação| [repositorio](https://github.com/caeslucio/GCES-Kdenlive-relatorios/blob/main/docs/materiais/template-relatorio.md) | Concluído |
+| Data       | Atividade                                     | Tipo         | Referência                                                                                                                                                                                         | Status    |
+| ---------- | --------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 10/04/2026 | Estudo da arquitetura do Kdenlive             | Estudo       | [Link](https://invent.kde.org/lucasma/kdenlive/-/blob/master/dev-docs/architecture.md)                                                                                                             | Concluído |
+| 11/04/2026 | Criação de conta no Invent.kde                | Outro        | [Link](https://invent.kde.org/lucasma)                                                                                                                                                             | Concluído |
+| 13/04/2026 | Criação do Fork do repositório                | Código       | [Link](https://invent.kde.org/lucasma/kdenlive)                                                                                                                                                    | Concluído |
+| 14/04/2026 | Mapeamento de canais de comunicação e devs    | Estudo       | [Link](https://develop.kde.org/docs/getting-started/building/help-developers/)                                                                                                                     | Concluído |
+| 16/04/2026 | Estudo do Guia de Contribuição e Build        | Estudo       | [Link contribuição](https://develop.kde.org/docs/getting-started/building/help-developers/) [Link Buld](https://invent.kde.org/multimedia/kdenlive/-/blob/master/dev-docs/build.md?ref_type=heads) | Concluído |
+| 21/04/2026 | Compilação e execução bem-sucedida via Docker | Código       | [Link build](https://invent.kde.org/multimedia/kdenlive/-/blob/master/dev-docs/build.md?ref_type=heads)                                                                                            | Concluído |
+| 21/04/2026 | Documentação do Diário de Bordo Sprint 0      | Documentação | [repositorio](https://github.com/caeslucio/GCES-Kdenlive-relatorios/blob/main/docs/materiais/template-relatorio.md)                                                                                | Concluído |
 
 ---
 
@@ -132,13 +132,13 @@ E dentre muitas outras. Essas labels ajudam a organizar o desenvolvimento do Kde
 
 - **Build do Projeto:** As dificuldades de build impactaram significativamente o ambiente de desenvolvimento, principalmente devido à incompatibilidade de versões e falhas em ferramentas de automação como Craft e KDE-Builder para Ubuntu 22.04. Isso exigiu a migração para um ambiente containerizado via Docker.
 
-![Craft - Link quebrado pro repositório do bigSh0t](../../assets/contribuicoes_individuais/sprint0/craft_link_falha1.png)
+![Craft - Link quebrado pro repositório do bigSh0t](../../assets/contribuicoes_individuais/lucas/sprint0/craft_link_falha1.png)
 *Figura 4: Tela de Link quebrado pro repositório do bigSh0t.*
 
-![Link correto para bigSh0t](../../assets/contribuicoes_individuais/sprint0/craft_link_falha2.png)
+![Link correto para bigSh0t](../../assets/contribuicoes_individuais/lucas/sprint0/craft_link_falha2.png)
 *Figura 5: Tela de Link correto para bigSh0t.*
 
-![Falha do Craft em achar Master](../../assets/contribuicoes_individuais/sprint0/craft_master_falha.jpeg)
+![Falha do Craft em achar Master](../../assets/contribuicoes_individuais/lucas/sprint0/craft_master_falha.jpeg)
 
 *Figura 6: Tela de Falha do Craft em achar Master.*
 
@@ -169,6 +169,7 @@ E dentre muitas outras. Essas labels ajudam a organizar o desenvolvimento do Kde
 
 ## 7. Histórico de Versões
 
-| Versão | Descrição                                                      | Autor(es)                            | Data       | 
-|--------|----------------------------------------------------------------|--------------------------------------|------------|
-| 1.1    |  Adicionando Documentação da Sprint0               |  [Lucas Mendonça ](https://github.com/lucasarruda9)  | 21/04/2026 | 
+| Versão | Descrição                               | Autor(es)                                          | Data       |
+| ------ | --------------------------------------- | -------------------------------------------------- | ---------- |
+| 1.1    | Adicionando Documentação da Sprint0     | [Lucas Mendonça ](https://github.com/lucasarruda9) | 21/04/2026 |
+| 1.2    | Correção das links de imagem da Sprint0 | [Caetano Santos](https://github.com/caeslucio)     | 11/05/2026 |
