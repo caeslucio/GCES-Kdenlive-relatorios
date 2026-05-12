@@ -1,12 +1,12 @@
 # Relatório de Contribuição – Sprint 0
- 
-Disciplina: Gestão de Configuração e Evolução de Software  
-Equipe: GCES 2026.1 – Kdenlive  
-Comunidade/Projeto: KDE / Kdenlive  
-Matrícula: 231026859  
-GitHub: @LeticiaMonteiroo  
-KDE Invent: @leticia
-Período: 13/04/2026 – 21/04/2026
+
+**Disciplina:** Gestão da Configuração e Evolução de Software (GCES)  
+**Equipe:** GCES 2026.1 – Kdenlive  
+**Comunidade/Projeto de Software Livre:** [Kdenlive](https://invent.kde.org/multimedia/kdenlive)  
+**Matrícula:** 231026859  
+**GitHub:** [@LeticiaMonteiroo](https://github.com/LeticiaMonteiroo)  
+**KDE Invent:** [@leticia](https://invent.kde.org/leticia)
+
  
 ---
  
