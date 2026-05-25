@@ -12,23 +12,30 @@
 
 ## 1. Resumo da Sprint 2 (12/05/2026 - 25/05/2026)
 
-A Sprint 2 foi focada exclusivamente na contribuição para o projeto de código aberto Kdenlive. O trabalho envolveu desde a triagem de tarefas voltadas para novos contribuidores nas plataformas do KDE até a implementação de código e submissão de um Merge Request para a base principal do software. A atividade prática consistiu em resolver uma demanda de usabilidade aberta desde 2019, aplicando lógica em QML para permitir o arrasto de marcadores de clipe na linha de tempo sem interferir nas interações de clique já existentes.
+A Sprint 2 foi focada exclusivamente na contribuição para o projeto de código aberto Kdenlive. O trabalho envolveu o monitoramento do Merge Request aberto na sprint passada e a triagem de novas demandas no ecossistema do KDE. A atividade   principal consistiu em resolver um problema de usabilidade na linha de tempo aberto desde 2019, aplicando lógica em QML para permitir o arrasto de marcadores de clipe por meio do mouse, sem impactar as interações de clique já existentes no editor.
 
-### 1.1 Identificação do Bug
+### 1.1 Acompanhamento do Merge Request da Sprint Anterior
+
+Durante o período, foi realizado o monitoramento contínuo do Merge Request aberto na Sprint 1, referente às validações de importação na pasta de Sequências. Como a branch Master do Kdenlive sofre atualizações diárias, foi acompanhado o status da submissão para garantir a ausência de conflitos no código. Até o encerramento desta sprint, a contribuição não recebeu revisões ou feedback formal por parte dos mantenedores da comunidade, permanecendo ativa, atualizada e aguardando avaliação para ser integrada ao projeto.
+
+![MR da Sprint1"](../../assets/contribuicoes_individuais/lucas/sprint2/Merge_S1.png)
+*Figura 1: Lista de Bugs do KDE com os filtros "junior-jobs" e "kdenlive"*
+
+### 1.2 Identificação do Bug
 
 O processo iniciou-se com o mapeamento de relatórios de falhas no ecossistema Bugs.kde.org, utilizando o filtro de buscas voltado a "junior-jobs" do Kdenlive. O objetivo foi selecionar uma demanda de usabilidade reportada diretamente pela comunidade que trouxesse um desafio sob medida para novos contribuidores. Dessa forma, foi selecionado o BUG 406887, uma pendência aberta desde 2019.
 
-![Lista de Bugs da KDE"]()
-*Figura 1: Lista de Bugs do KDE com os filtros "junior-jobs" e "kdenlive"*
+![Lista de Bugs da KDE"](../../assets/contribuicoes_individuais/lucas/sprint2/BUGS.png)
+*Figura 2: Lista de Bugs do KDE com os filtros "junior-jobs" e "kdenlive"*
 
-### 1.2 Descrição do Bug
+### 1.3 Descrição do Bug
 
 O BUG 406887 apontava uma limitação na usabilidade do timeline do Kdenlive, sendo impossível mover marcadores de clipe diretamente arrastando-os com o mouse. No comportamento original, para alterar a posição de um marcador, o usuário era obrigado a abrir um menu de edição e digitar o novo valor de tempo manualmente. A proposta consistia em permitir a movimentação do marcador na timeline pelo mouse.
 
-![BUG 406887"]()
-*Figura 2: BUG 406887*
+![BUG 406887"](../../assets/contribuicoes_individuais/lucas/sprint2/BUG_406887.png)
+*Figura 3: BUG 406887*
 
-### 1.3 Contribuição
+### 1.4 Contribuição
 
 Como a alteração mexia direto com a parte visual e com a captura dos movimentos do usuário, o desenvolvimento concentrou-se nos arquivos de interface em QML. A contribuição estruturou-se em:
 
@@ -53,7 +60,7 @@ A seguir, o vídeo demonstrando o comportamento do Editor Kdenlive após a imple
   <small> <i>Ou assista pelo link: <a href="https://youtu.be/TewyznjV4gM" target="_blank">YouTube</a>.</i></small>
 </p>
 
-### 1.4 Merge Request
+### 1.5 Merge Request
 
 A etapa final consistiu na submissão das alterações para o repositório oficial do Kdenlive via GitLab. O processo de Merge Request envolveu:
 
@@ -61,11 +68,26 @@ A etapa final consistiu na submissão das alterações para o repositório ofici
 
 * **Vínculo automatizado:** Inclusão da tag BUG: 406887 no commit, o que garante o rastreamento correto e o fechamento automático do relatório de falhas lá no Bugzilla do KDE assim que o código for aceito na branch principal.
 
-![Merge Request da contribuição](../../assets/contribuicoes_individuais/lucas/sprint1/Merge_Request.png)
-*Figura 3: Merge Request da contribuição*
+![Merge Request da contribuição](../../assets/contribuicoes_individuais/lucas/sprint2/Merge_Request.png)
+*Figura 4: Merge Request da contribuição*
 
 ---
 
+## 2. Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo | Referência | Status    |
+| ----- | ------------------------------------------- | --------------------------------- | --------------- | --------- |
+| 14/05/2026 | Identificar possíveis issues a trabalhar com a label "First task" | Estudo | [Link](https://invent.kde.org/multimedia/kdenlive/-/work_items?sort=created_date&state=opened&label_name%5B%5D=First%20Task&first_page_size=20) | Concluído |
+| 16/05/2026 | Identificar possíveis contribuições no Bugs.kde.org marcados como "junior-jobs" da kdenlive | Estudo | [Link](https://bugs.kde.org/buglist.cgi?quicksearch=junior-jobs%20kdenlive) | Concluído |
+| 17/05/2026 | Atualizar Merge Request da Sprint 1 para possível Merge na Master do Kdenlive | Outro | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/864) | Concluído |
+| 21/05/2026 | Seleção do BUG 406887 | Outro | [Link](https://bugs.kde.org/show_bug.cgi?id=406887) | Concluído |
+| 23/05/2026 | Atualizar Merge Request da Sprint 1 para possível Merge na Master do Kdenlive | Outro | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/864) | Concluído |
+| 24/05/2026 | Implementar nova funcionalidade de Marcador de Clip  | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/e1831980f0b8ef846e16ae29fbaaefeeafd2f4df) | Concluído |
+| 24/05/2026 | Abrir Merge request para aprovação na master do kdenlive | Documentação | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Concluído |
+| 24/05/2026 | Criar Documentação de contribuição individual da Sprint 2 | Documentação | [Link](https://github.com/caeslucio/GCES-Kdenlive-relatorios/blob/main/docs/contribuicoes_individuais/LucasArruda-231035464)| Concluído |
+
+
+---
 
 ## 3. Maiores Avanços
 
@@ -95,6 +117,15 @@ A etapa final consistiu na submissão das alterações para o repositório ofici
 
 ---
 
+## 6. Plano Pessoal para a Próxima Sprint
+
+* [ ] Contribuir e subir mais um Merge Request no Kdenlive.
+* [ ] Aplicar possíveis alterações dessa contribuição conforme a comunidade e revisores.
+* [ ] Escrever o diário de bordo referente à Sprint 3.
+* [ ] Ajustar formatação de diários de bordo anteriores.
+
+---
+
 
 ## 7. Histórico de Versões
 
@@ -103,3 +134,4 @@ A etapa final consistiu na submissão das alterações para o repositório ofici
 | 1.0    |  Adicionando template e resumo introdutório da Sprint2                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 24/05/2026 | 
 | 1.1    |  Adicionando Identificação e descrição da nova funcionalidade (BUG 406887)               |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 24/05/2026 | 
 | 1.2    |  Adicionando documentação da contribuição, maiores dificuldades, avanços e aprendizados               |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 24/05/2026 | 
+| 1.3    |  Inclusão de imagens, mapeamento das atividades realizadas no período da Sprint 2, e definição do plano de ação pessoal para a próxima sprint.               |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 24/05/2026 | 
