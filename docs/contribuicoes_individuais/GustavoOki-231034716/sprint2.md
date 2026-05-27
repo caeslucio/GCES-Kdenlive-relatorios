@@ -53,8 +53,8 @@ Co-Author: https://invent.kde.org/gustoki
 
 ### Entrada 02 — Acompanhamento Inicial e Pipelines de CI
 
-**Responsável principal:** Gustavo  
-**Revisão:** Davi
+**Responsável principal:** Davi
+**Revisão:** Gustavo
 
 Logo após a abertura do MR, acompanhamos a execução dos dois pipelines de CI disparados automaticamente pelo GitLab do KDE.
 
@@ -71,8 +71,8 @@ Nenhum dos dois avisos causou falha no pipeline, mas anotamos para endereçar pr
 
 ### Entrada 03 — Feedback Real do Mantenedor
 
-**Responsável principal:** Davi  
-**Revisão:** Gustavo
+**Responsável principal:** Gustavo
+**Revisão:** Davi
 
 Após alguns dias da abertura do MR, um mantenedor do Kdenlive deixou uma revisão detalhada. O comentário foi extenso e abriu pontos técnicos relevantes, além de sugestões de evolução para o futuro.
 
@@ -163,7 +163,7 @@ Os ajustes identificados são viáveis e bem delimitados. A expectativa é imple
 | Tarefa | Gustavo | Davi |
 |---|---|---|
 | Abertura e configuração do MR !866 | ✅ | ✅ |
-| Acompanhamento dos pipelines de CI | ✅ | — |
+| Acompanhamento dos pipelines de CI | — | ✅ |
 | Análise do feedback do mantenedor | ✅ | ✅ |
 | Elaboração da resposta ao mantenedor | ✅ | ✅ |
 | Planejamento dos ajustes (próxima sprint) | ✅ | ✅ |
