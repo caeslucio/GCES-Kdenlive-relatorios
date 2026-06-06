@@ -62,10 +62,33 @@ As novas modificações foram submetidas ao repositório oficial da KDE para atu
 | 06/06/2026 | Atualizar o MR oficial com o suporte completo a Undo/Redo | Documentação | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Concluído |
 | 06/06/2026 | documentar diário de bordo da Sprint 3 | Documentação | [Link](https://github.com/caeslucio/GCES-Kdenlive-relatorios/blob/main/docs/contribuicoes_individuais/LucasArruda-Sprint3) | Concluído |
 
+---
 
-## 3. Histórico de Versões
+## 3. Maiores Avanços
+
+- **Prática com Code Review em grandes projetos:** Compreensão de como funciona o processo de discussão de um recurso com os desenvolvedores oficiais do software e adaptação do código com base em problemas de uso reais levantados por eles.
+
+- **Uso do Padrão de Comandos (Command Pattern):** Entendimento prático de como funciona a estrutura de histórico (Undo/Redo) em softwares complexos de edição de vídeo, lidando com pilhas de ações em C++.
+
+---
+
+## 4. Maiores Dificuldades
+
+- **Gerenciamento de Contexto no Histórico do Core:** Compreender e depurar o fluxo do `markerModel->moveMarkers` em conjunto com o barramento do `pCore`, garantindo que as referências de desfazer e refazer funcionassem perfeitamente sem quebrar o modelo de dados da linha de tempo.
+
+## 5. Aprendizados
+
+- **Evolução de Software Baseada em Feedback:** Vivência real do ciclo de vida de uma contribuição open-source, em que uma solução de interface inicial precisa ser expandida após passar pela revisão dos mantenedores.
+
+- **Segurança e Robustez em Interfaces:** Percepção de que funcionalidades complexas de manipulação direta, como arrasto de componentes, exigem mecanismos transacionais acoplados ao motor de dados para garantir a integridade da aplicação e uma boa experiência ao usuário.
+
+---
+
+
+## 6. Histórico de Versões
 
 | Versão | Descrição                                                      | Autor(es)                            | Data       | 
 |--------|----------------------------------------------------------------|--------------------------------------|------------|
 | 1.0    |  Adicionando seção de introdução da Sprint3                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
 | 1.1    |  Adicionando tabela de atividades realizadas                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
+| 1.2    |  Adicionando seção de aprendizados, dificuldade e avanços                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
