@@ -3,7 +3,7 @@
 **Disciplina:** GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE  
 **Equipe:** GCES 2026.1 – Kdenlive  
 **Comunidade/Projeto de Software Livre:** [Kdenlive](https://invent.kde.org/multimedia/kdenlive)  
-**Sprint:** Sprint 3 (26/05/2026 – 08/05/2026)  
+**Sprint:** Sprint 3 (26/05/2026 – 08/06/2026)  
 **Matrícula:** 231035464   
 **GitHub:** [@lucasarruda](https://github.com/lucasarruda9)  
 **KDE Invent:** [@lucasma](https://invent.kde.org/lucasma)
@@ -48,8 +48,24 @@ As novas modificações foram submetidas ao repositório oficial da KDE para atu
 ![Merge Request da contribuição atualizado]()
 *Figura 2: Merge Request da contribuição atualizado*
 
-## 2. Histórico de Versões
+---
+
+## 2. Atividades Realizadas
+
+| Data  | Atividade | Tipo | Referência | Status    |
+| ----- | --------- | ---- | ---------- | --------- |
+| 28/05/2026 | Monitorar feedbacks e responder dúvidas técnicas dos revisores no MR #880 | Outro | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Concluído |
+| 01/06/2026 | Analisar a arquitetura do `TimelineController` no C++ e mapear o uso do `pCore->pushUndo` | Estudo | [Link](https://invent.kde.org/multimedia/kdenlive/-/blob/master/src/timeline2/view/timelinecontroller.cpp?ref_type=heads) | Concluído |
+| 05/06/2026 | Executar Git Rebase com a branch master upstream para resolver conflitos que bloqueavam o MR | Gerência | [Link](https://invent.kde.org/lucasma/kdenlive/-/tree/feat/move-clip-marker-with-mouse?ref_type=heads) | Concluído |
+| 06/06/2026 | Implementar a nova função `moveClipMarker` no `.h` e `.cpp` da camada de controle C++ | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/6ba7d8abbbcccfd38a8be46ca0c70ac9bb1e15b6) | Concluído |
+| 06/06/2026 | Refatorar o arquivo QML para substituir a chamada antiga do método pelo atual | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/6ba7d8abbbcccfd38a8be46ca0c70ac9bb1e15b6) | Concluído |
+| 06/06/2026 | Atualizar o MR oficial com o suporte completo a Undo/Redo | Documentação | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Concluído |
+| 06/06/2026 | documentar diário de bordo da Sprint 3 | Documentação | [Link](https://github.com/caeslucio/GCES-Kdenlive-relatorios/blob/main/docs/contribuicoes_individuais/LucasArruda-Sprint3) | Concluído |
+
+
+## 3. Histórico de Versões
 
 | Versão | Descrição                                                      | Autor(es)                            | Data       | 
 |--------|----------------------------------------------------------------|--------------------------------------|------------|
 | 1.0    |  Adicionando seção de introdução da Sprint3                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
+| 1.1    |  Adicionando tabela de atividades realizadas                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
