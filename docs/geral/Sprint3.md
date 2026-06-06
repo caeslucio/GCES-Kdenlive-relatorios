@@ -30,7 +30,7 @@ Em paralelo, a dupla publicou a resposta elaborada na Sprint 2 na thread do MR !
 
 | Entrega | Status | Link/Referência | Observações |
 | ------- | ------ | --------------- | ----------- |
-| **Resolução do BUG 508117** | Concluído | [BUG 483954 no Bugzilla](https://bugs.kde.org/show_bug.cgi?id=508117) | Adição do campo Loop Count para WebP animado |
+| **Resolução do BUG 508117** | Concluído | [BUG 508117 no Bugzilla](https://bugs.kde.org/show_bug.cgi?id=508117) | Adição do campo Loop Count para WebP animado |
 | **Submissão do Merge Request !891** | Concluído | [MR !891 no KDE Invent](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/891) | Implementação do Loop Count no editor de presets |
 | **Resposta ao mantenedor do MR !866** | Concluído | [MR !866 no KDE Invent](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/866) | Resposta publicada com plano de ajustes |
 
