@@ -20,7 +20,7 @@ Dando continuidade ao acompanhamento do Merge Request #880, o mantenedor Jean-Ba
 
 Na discussão técnica, foi esclarecido que, durante a fase de testes, essa situação apresentou baixa ocorrência pelo fato de a área de clique do marcador ser reduzida em comparação ao tamanho total do clipe, além do ponteiro do mouse mudar de formato para fornecer feedback visual. Apesar disso, o contraponto evidenciou a necessidade de implementar o suporte para desfazer e refazer a ação, estabelecendo uma camada extra de segurança para o usuário em cenários de arrasto acidental.
 
-![Feedback dos Mantenedores no GitLab]()
+![Feedback dos Mantenedores no GitLab](../../assets/contribuicoes_individuais/lucas/sprint3/feedback.png)
 *Figura 1: Discussão técnica com os mantenedores do Kdenlive*
 
 ### 1.2 Resolução de Conflitos
@@ -45,7 +45,7 @@ O desenvolvimento desta sprint estruturou-se em duas frentes de trabalho:
 
 As novas modificações foram submetidas ao repositório oficial da KDE para atualização do Merge Request pendente. A mensagem de commit foi estruturada seguindo o padrão do projeto, preservando a tag `BUG: 406887` no texto para manter todo o histórico de evolução indexado à issue original no Bugzilla.
 
-![Merge Request da contribuição atualizado]()
+![Merge Request da contribuição atualizado](../../assets/contribuicoes_individuais/lucas/sprint3/contribuicao_atualizada.png)
 *Figura 2: Merge Request da contribuição atualizado*
 
 ---
@@ -84,11 +84,21 @@ As novas modificações foram submetidas ao repositório oficial da KDE para atu
 
 ---
 
+## 6. Plano Pessoal para a Próxima Sprint
 
-## 6. Histórico de Versões
+* [ ] Acompanhar a avaliação final do código do MR #880.
+* [ ] Realizar eventuais ajustes pontuais solicitados.
+* [ ] Procurar novas issues para contribuição.
+* [ ] Realizar documentação do diário de bordo da Sprint 4.
+
+---
+
+
+## 7. Histórico de Versões
 
 | Versão | Descrição                                                      | Autor(es)                            | Data       | 
 |--------|----------------------------------------------------------------|--------------------------------------|------------|
 | 1.0    |  Adicionando seção de introdução da Sprint3                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
 | 1.1    |  Adicionando tabela de atividades realizadas                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
 | 1.2    |  Adicionando seção de aprendizados, dificuldade e avanços                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
+| 1.3    |  Adicionando seção de Plano pessoal e Imagens                |  [Lucas Mendonça](https://github.com/lucasarruda9)  | 06/06/2026 | 
