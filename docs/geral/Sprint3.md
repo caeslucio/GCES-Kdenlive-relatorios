@@ -9,20 +9,24 @@
 
 ## 1. Resumo da Sprint
 
-A Sprint 3 teve como foco a resolução de uma issue de usabilidade no Kdenlive relacionada à exportação de vídeos no formato WebP animado. A dupla Gustavo Oki e Davi Rodrigues Nunes identificou, implementou e testou a correção do BUG 508117, que impedia usuários de configurar o número de loops diretamente pela interface do Kdenlive ao exportar arquivos WebP animados. O trabalho resultou na submissão do Merge Request !891 ao repositório oficial do KDE.
+A Sprint 3 foi focada na resolução de problemas de usabilidade, evolução de recursos e refinamento de contribuições anteriores para o Kdenlive, dividindo-se em duas grandes frentes de trabalho:
 
-Em paralelo, a dupla publicou a resposta elaborada na Sprint 2 na thread do MR !866, dando continuidade ao processo de revisão daquela contribuição anterior.
+1. **Evolução Técnica do Recurso de Marcadores (BUG 406887):** Diante dos feedbacks dos mantenedores no Merge Request #880, o escopo foi expandido para mitigar interações acidentais na linha de tempo. Foi implementado o suporte transacional completo a comandos de desfazer e refazer (Undo/Redo) para o movimento de marcadores de Clipe via interface QML e engine C++.
+2. **Correção na Exportação de WebP Animado (BUG 508117):** Identificação e correção do bug que impedia usuários de configurar o número de loops diretamente pela interface do Kdenlive ao exportar arquivos WebP, culminando na abertura do Merge Request !891.
+
+Em paralelo, a equipe manteve o acompanhamento de contribuições passadas, realizando rebase de branches e publicando atualizações na thread do MR !866.
 
 ---
 
 ## 2. Objetivos da Sprint
 
+- [x] Implementar o suporte completo a Undo/Redo para movimentação de marcadores de clipe (MR #880).
+- [x] Resolver conflitos de código através de Git Rebase com a branch `master` upstream no MR #880.
 - [x] Identificar e analisar o BUG 508117 no Bugzilla do KDE.
 - [x] Implementar o campo "Loop Count" na interface de edição de presets de renderização do Kdenlive.
 - [x] Adicionar o preset "WebP Animation" na categoria "Images sequence" do repositório de presets.
-- [x] Testar localmente a solução e validar o parâmetro de loop no arquivo WebP gerado.
-- [x] Submeter o Merge Request !891 ao repositório oficial do Kdenlive.
-- [x] Publicar a resposta ao mantenedor na thread do MR !866.
+- [x] Testar localmente as soluções e validar os parâmetros gerados nos arquivos finais.
+- [x] Submeter/atualizar os Merge Requests correspondentes no repositório oficial do Kdenlive.
 
 ---
 
@@ -30,6 +34,7 @@ Em paralelo, a dupla publicou a resposta elaborada na Sprint 2 na thread do MR !
 
 | Entrega | Status | Link/Referência | Observações |
 | ------- | ------ | --------------- | ----------- |
+| **Evolução do MR #880 (Undo/Redo)** | Concluído | [MR #880 no KDE Invent](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Integração para movimentação de marcadores de clipes |
 | **Resolução do BUG 508117** | Concluído | [BUG 508117 no Bugzilla](https://bugs.kde.org/show_bug.cgi?id=508117) | Adição do campo Loop Count para WebP animado |
 | **Submissão do Merge Request !891** | Concluído | [MR !891 no KDE Invent](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/891) | Implementação do Loop Count no editor de presets |
 | **Resposta ao mantenedor do MR !866** | Concluído | [MR !866 no KDE Invent](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/866) | Resposta publicada com plano de ajustes |
@@ -40,45 +45,46 @@ Em paralelo, a dupla publicou a resposta elaborada na Sprint 2 na thread do MR !
 
 | Integrante | Contribuições | Links (Diário de Bordo) | Observações |
 | ---------- | ------------- | ----------------------- | ----------- |
-| Caetano Santos Lucio             |  | [Diário de Bordo](../contribuicoes_individuais/CaetanoLucio-180144979/Sprint3.md)    | Pendente   |
+| Caetano Santos Lucio | – | [Diário de Bordo](../contribuicoes_individuais/CaetanoLucio-180144979/Sprint3.md) | Pendente |
 | Davi Rodrigues Nunes | Análise da issue e do comportamento do parâmetro `loop` no muxer WebP via FFmpeg e MLT. Investigação do bug onde o parâmetro `loop=0` não era incluído nos params por estar dentro de um bloco `if (gopSpinner->value() > 0)`. Participação na implementação e nos testes de validação com `webpmux`. Co-autoria no commit submetido. | [Diário de Bordo](../contribuicoes_individuais/DaviRodrigues-232014413/sprint3.md) | Concluído |
 | Gustavo Oki de Freitas Rodrigues | Implementação das modificações nos 3 arquivos do projeto (`editrenderpreset_ui.ui`, `renderpresetdialog.cpp`, `renderpresetrepository.cpp`). Investigação e resolução do bug do parâmetro `loop` não sendo gerado. Testes locais com `webpmux` para validação do `Loop Count: 0`. Submissão e documentação do MR !891. | [Diário de Bordo](../contribuicoes_individuais/GustavoOki-231034716/sprint3.md) | Concluído |
-| Julia dos Reis Teixeira Massuda  | –                                                                                                                                                   | [Diário de Bordo](../contribuicoes_individuais/JuliaMassuda-231035150/sprint2.md)    | Pendente    |
-| João Pedro Rodrigues             | –                                                                                                                                                   | [Diário de Bordo](../contribuicoes_individuais/JoaoRodrigues-231035150/sprint2.md)   | Pendente    |
-| Karolina Vieira Barbosa          | –                                                                                                                                                   | [Diário de Bordo](../contribuicoes_individuais/KarolinaVieira-202045820/sprint2.md)  | Pendente    |
-| Letícia da Silva Monteiro        | –                                                                                                                                                   | [Diário de Bordo](../contribuicoes_individuais/LeticiaMonteiro-231026859/sprint2.md) | Pendente    |
-| Lucas Mendonça Arruda            | –         | [Diário de Bordo](../contribuicoes_individuais/LucasArruda-231035464/Sprint2.md)     | Pendente   |
+| Julia dos Reis Teixeira Massuda | – | [Diário de Bordo](../contribuicoes_individuais/JuliaMassuda-231035150/sprint2.md) | Pendente |
+| João Pedro Rodrigues | – | [Diário de Bordo](../contribuicoes_individuais/JoaoRodrigues-231035150/sprint2.md) | Pendente |
+| Karolina Vieira Barbosa | – | [Diário de Bordo](../contribuicoes_individuais/KarolinaVieira-202045820/sprint2.md) | Pendente |
+| Letícia da Silva Monteiro | – | [Diário de Bordo](../contribuicoes_individuais/LeticiaMonteiro-231026859/sprint2.md) | Pendente |
+| **Lucas Mendonça Arruda** | Resolução de conflitos via Git Rebase no arquivo `Clip.qml` com a master upstream. Criação da função de controle `TimelineController::moveClipMarker` no C++ mapeada como `Q_INVOKABLE` com tratamento transacional (`pCore->pushUndo`). Refatoração da interface QML para substituição do método antigo de arrasto de marcadores de clipe, vinculando o evento ao histórico nativo de Undo/Redo do software. | [Diário de Bordo](../contribuicoes_individuais/LucasArruda-231035464/Sprint3.md) | **Concluído** |
 
 ---
 
 ## 5. Maiores Avanços
 
-- **Resolução de problema real de usabilidade:** Usuários não precisam mais executar `webpmux -set loop 0` manualmente após cada exportação WebP.
-- **Integração com o pipeline MLT/FFmpeg:** Compreensão de como o MLT repassa parâmetros ao muxer avformat e como o parâmetro `loop` é tratado pelo muxer WebP do FFmpeg.
-- **Adição de preset à interface:** O preset "WebP Animation" agora aparece corretamente na categoria "Images sequence" da janela de renderização.
-- **Validação ponta a ponta:** A solução foi confirmada com `webpmux -info`, que retornou `Loop Count: 0` no arquivo gerado.
+- **Gestão de Transações e Histórico (Command Pattern):** Entendimento prático de como funciona a estrutura de histórico (Undo/Redo) em softwares complexos de edição de vídeo, acoplando a interface gráfica (QML) com pilhas de ações em C++ de forma segura.
+- **Evolução de Software Baseada em Code Review:** Vivência real do ciclo de vida de uma contribuição open-source, adaptando componentes de interface e regras de negócio a partir do feedback direto dos mantenedores do Kdenlive.
+- **Resolução de problema real de usabilidade em renderização:** Eliminação da necessidade de executar comandos manuais via terminal (`webpmux`) pós-exportação de WebP animado.
+- **Integração profunda com o pipeline MLT/FFmpeg:** Compreensão de como propriedades de componentes de interface se traduzem em AVOptions dentro do motor de renderização do ecossistema KDE.
 
 ---
 
 ## 6. Maiores Dificuldades
 
-- **Identificação do nome correto do parâmetro:** Inicialmente tentou-se `muxer_opt_loop`, mas o MLT exige simplesmente `loop`, passado diretamente como AVOption ao muxer.
-- **Bug do bloco GOP:** O parâmetro `loop=0` estava sendo gerado dentro de um bloco `if (gopSpinner->value() > 0)`, e como o valor padrão do GOP é 0, o parâmetro nunca era incluído nos params finais.
-- **FFmpeg sem suporte a libwebp_anim:** O FFmpeg distribuído pelo KDE Craft não foi compilado com `--enable-libwebp`, exigindo substituição manual das DLLs para viabilizar o teste local.
-- **Preset WebP não aparecia na interface:** O `parseMltPresets()` só carregava presets da pasta `stills/` como "Images sequence", ignorando o preset de animação WebP que fica na raiz do avformat.
+- **Gerenciamento de Contexto no Histórico do Core:** Compreender e depurar o fluxo do `markerModel->moveMarkers` em conjunto com o barramento do `pCore`, garantindo que as referências de desfazer e refazer funcionassem sem corromper o modelo de dados da timeline.
+- **Bug silencioso do bloco GOP:** Identificação de que o parâmetro `loop=0` para o WebP estava sendo omitido por estar erroneamente aninhado dentro de uma condicional de verificação do GOP.
+- **Ambiente de Testes Local Limitado:** O FFmpeg distribuído pelo ambiente padrão do KDE Craft veio sem suporte nativo à `libwebp_anim`, exigindo substituição manual de bibliotecas dinâmicas (DLLs) para homologação do código.
 
 ---
 
 ## 7. Lições Aprendidas
 
-- **Camada de abstração do MLT:** O MLT possui sua própria forma de repassar opções ao FFmpeg, diferente da sintaxe de linha de comando. Parâmetros de muxer são passados diretamente como propriedades do consumer avformat.
-- **Importância do teste ponta a ponta:** A validação com `webpmux -info` foi essencial para confirmar que o parâmetro estava chegando corretamente ao arquivo final, e não apenas à camada de interface.
-- **Debugging incremental:** A investigação foi feita camada a camada — interface → preset salvo → script MLT → arquivo gerado — o que permitiu isolar exatamente onde o parâmetro estava se perdendo.
+- **Robustez em Interfaces Gráficas:** Funcionalidades de manipulação direta (como o arrasto por mouse) exigem mechanisms transacionais acoplados ao motor de dados para garantir a integridade do estado da aplicação.
+- **Comunicação com Camadas de Abstração:** O MLT repassa opções ao FFmpeg de forma proprietária, agindo como propriedades do consumer `avformat`, demandando mapeamento rigoroso de nomenclatura.
+- **Análise Incremental de Causa Raiz:** A importância de debugar o fluxo de dados em camadas (Interface -> Preset Salvo -> Script MLT -> Arquivo Binário Gerado) para isolar falhas de integração.
 
 ---
 
 ## 8. Planejamento para a Próxima Sprint (Sprint 4)
 
-- [ ] Acompanhar o feedback dos mantenedores no MR !891 e realizar ajustes solicitados.
-- [ ] Implementar os ajustes do MR !866 conforme resposta ao mantenedor (nome dinâmico da pasta, tipo do clipe na mensagem, opção configurável no menu de contexto).
-- [ ] Registrar o progresso nos diários de bordo individuais.
+- [ ] Acompanhar a avaliação final e feedbacks dos mantenedores nos MRs !891 e #880.
+- [ ] Realizar eventuais ajustes pontuais ou refatorações solicitadas pela comunidade do Kdenlive nos patches submetidos.
+- [ ] Implementar os ajustes planejados para o MR !866 (nome dinâmico da pasta, tipo do clipe e menus de contexto).
+- [ ] Mapear novas issues e bugs abertos no Bugzilla para iniciar novas frentes de contribuição.
+- [ ] Registrar o progresso nos diários de bordo individuais da Sprint 4.
