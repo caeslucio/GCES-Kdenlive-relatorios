@@ -20,12 +20,15 @@ Dando continuidade ao acompanhamento do Merge Request #880, o mantenedor Jean fo
 
 Para solucionar o problema, Jean propôs uma mudança de arquitetura inspirada no funcionamento dos marcadores da régua principal (`Ruler.qml`), fornecendo uma prova de conceito em formato de patch. A orientação consistia em trocar o componente de arrasto por manipulação manual de coordenadas e dividir o movimento do marcador em duas etapas no backend para não entupir a pilha de histórico do usuário.
 
-![Feedback dos Mantenedores no GitLab](../../assets/contribuicoes_individuais/lucas/sprint3/feedback.png)
+![Feedback dos Mantenedores no GitLab](../../assets/contribuicoes_individuais/lucas/sprint4/feedback.png)
 *Figura 1: Discussão técnica com os mantenedores do Kdenlive*
 
 ### 1.2 Resolução de Conflitos e Ajustes no Linter
 
 Durante a integração do patch e testes no pipeline de Integração Contínua (CI) do GitLab, a build falhou devido a restrições estritas do linter de QML do projeto (`all_qmllint`). O validador acusou problemas de "Unqualified access" no arquivo `Clip.qml`, identificando trechos de código legados anteriores à alteração que passaram a ser validados pelo escopo do linter devido à nova edição. Esse comportamento gerava um erro fatal na pipeline e travava a compilação local, impedindo os testes da nova funcionalidade.
+
+![Erro de build](../../assets/contribuicoes_individuais/lucas/sprint4/erro.png)
+*Figura 2: Erro de Build por conta do qmllint*
 
 Para mitigar o problema e destravar o fluxo de desenvolvimento em ambiente local, foi necessário remover temporariamente a dependência `add_dependencies(kdenlive all_qmllint)` na linha 369 do arquivo `CMakeLists.txt` (localizado no diretório `src`). Essa alteração foi mantida estritamente fora dos commits para não modificar as regras globais do projeto. Por fim, para garantir a conformidade com a esteira do GitLab, o escopo das variáveis foi devidamente qualificado e ajustado dentro das frentes de trabalho afetadas no arquivo QML, resolvendo os avisos e liberando o pipeline.
 
@@ -49,7 +52,7 @@ As principais alterações implementadas foram:
 As modificações de refatoração estrutural foram commitadas atualizando o merge request. O histórico manteve-se indexado à issue original (`BUG: 406887`) para fins de rastreabilidade de código e evolução de software.
 
 ![Merge Request da contribuição atualizado](../../assets/contribuicoes_individuais/lucas/sprint4/contribuicao_atualizada.png)
-*Figura 2: Histórico de modificações atualizado no Merge Request #880*
+*Figura 3: Histórico de modificações atualizado no Merge Request #880*
 
 ---
 
@@ -96,4 +99,5 @@ As modificações de refatoração estrutural foram commitadas atualizando o mer
 | 1.0    | Adiciona seção de resumo da sprint 4 | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
 | 1.1    | Adiciona seção de atividades realizadas e maiores avanços | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
 | 1.2    | Adiciona seção de maiores dificuldades e aprendizados | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
-| 1.3    | ajusta texto de seções do diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.3    | Ajusta texto de seções do diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.4    | Adiciona imagens no diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
