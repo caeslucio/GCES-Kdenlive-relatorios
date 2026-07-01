@@ -31,18 +31,18 @@ Para mitigar o problema e destravar o fluxo de desenvolvimento em ambiente local
 
 ### 1.3 Descrição da Nova Demanda (Evolução Técnica)
 
-A nova especificação exigiu a substituição do arrasto baseado em componentes nativos de `Drag` pelo controle manual de fluxo de coordenadas e eventos de mouse. O objetivo principal consistiu em:
+O feedback do mantenedor indicou que a abordagem baseada em Drag não permitiria implementar corretamente o snapping. Por isso, a solução foi substituir esse mecanismo por um controle manual dos eventos de mouse.
 
 * **Gerenciamento de Eventos Visuais (`WithoutUndo`):** Implementar e invocar o método `moveClipMarkerWithoutUndo` no C++ para atualizar a posição visual do marcador dinamicamente no evento `onPositionChanged` do QML.
-* **Transação Definitiva (`moveClipMarker`):** No evento `onReleased`, restaurar momentaneamente o marcador à posição original do clique e aplicar o movimento definitivo associado à pilha de Undo/Redo do `pCore`, garantindo um histórico limpo e o funcionamento perfeito do Ctrl+Z.
+* **Transação Definitiva (`moveClipMarker`):** No evento `onReleased`, restaurar temporariamente o marcador à posição original do clique e aplicar o movimento definitivo associado à pilha de Undo/Redo do `pCore`, garantindo que apenas o movimento final fosse registrado na pilha de Undo/Redo, preservando o comportamento esperado do Ctrl+Z.
 * **Mecânica de Snapping:** Integrar a função de cálculo de quadros (`suggestSnapPoint`) para que o marcador seja atraído magneticamente pelos cortes e referências da timeline ao ser arrastado.
 
 ### 1.4 Contribuição
 
-O desenvolvimento desta sprint estruturou-se nas seguintes frentes:
+As principais alterações implementadas foram:
 
 * **Backend:** Criação e declaração do método `moveClipMarkerWithoutUndo` na classe `TimelineController`, tratando travas de concorrência com `QMutexLocker`, validação de limites com `qBound` e acesso direto ao modelo de dados do clipe binário (`markerModel->moveMarker`).
-* **Frontend com QML** Refatoração do bloco `markerComponent` no arquivo `Clip.qml`. Foi implementada  o mapeamento de coordenadas com `mapToItem`, o cálculo de deltas em frames proporcionais ao zoom/velocidade da linha de tempo e as lógicas de disparo sequencial nos estados `onPressed`, `onPositionChanged` e `onReleased`.
+* **Frontend com QML** Refatoração do bloco `markerComponent` no arquivo `Clip.qml`. Foi implementado  o mapeamento de coordenadas com `mapToItem`, o cálculo de deltas em frames proporcionais ao zoom/velocidade da linha de tempo e as lógicas de disparo sequencial nos estados `onPressed`, `onPositionChanged` e `onReleased`.
 
 ### 1.5 Atualização do Merge Request
 
@@ -75,9 +75,25 @@ As modificações de refatoração estrutural foram commitadas atualizando o mer
 
 ---
 
-## 4. Histórico de Versões
+## 4. Maiores Dificuldades
+
+* **Depuração do Linter de QML no Pipeline:** Entender o comportamento restritivo do `all_qmllint` adotado pelo time da KDE, que bloqueava a build devido a avisos de variáveis não qualificadas preexistentes no arquivo original.
+
+---
+
+## 5. Aprendizados
+
+* **Limitações do Componente de Drag do QML:** Entendimento de que o arrasto nativo do QML  limita o controle sobre as coordenadas do mouse e impede o cálculo preciso do *snapping*. Ficou claro que o uso de eventos manuais como o(`onPositionChanged`) é a abordagem correta para integrar a lógica de atração magnética à linha de tempo.
+
+* **Inconsistências em CI:** Percepção de que ferramentas de validação automatizada (`qmllint`) integradas recentemente ao projeto podem falhar ao validar o próprio código legado da branch `master`. Isso exigiu o aprendizado de estratégias para contornar temporariamente essas travas na build local (via `CMakeLists.txt`) para conseguir testar o desenvolvimento sem herdar falhas de builds ja existentes na master.
+
+---
+
+## 6. Histórico de Versões
 
 | Versão | Descrição                                                      | Autor(es)                            | Data       | 
 |--------|----------------------------------------------------------------|--------------------------------------|------------|
 | 1.0    | Adiciona seção de resumo da sprint 4 | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
 | 1.1    | Adiciona seção de atividades realizadas e maiores avanços | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.2    | Adiciona seção de maiores dificuldades e aprendizados | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.3    | ajusta texto de seções do diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
