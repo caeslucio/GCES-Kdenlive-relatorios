@@ -47,7 +47,14 @@ As principais alterações implementadas foram:
 * **Backend:** Criação e declaração do método `moveClipMarkerWithoutUndo` na classe `TimelineController`, tratando travas de concorrência com `QMutexLocker`, validação de limites com `qBound` e acesso direto ao modelo de dados do clipe binário (`markerModel->moveMarker`).
 * **Frontend com QML** Refatoração do bloco `markerComponent` no arquivo `Clip.qml`. Foi implementado  o mapeamento de coordenadas com `mapToItem`, o cálculo de deltas em frames proporcionais ao zoom/velocidade da linha de tempo e as lógicas de disparo sequencial nos estados `onPressed`, `onPositionChanged` e `onReleased`.
 
-### 1.5 Atualização do Merge Request
+### 1.5 Demonstração Prática da Funcionalidade
+
+Para validar a experiência de uso do recurso, foi gravada uma demonstração em vídeo do sistema de atração magnética operando em conjunto com a linha de tempo do Kdenlive:
+
+[![Demonstração do Snapping](https://img.youtube.com/vi/2T-hKZsvTA8/0.jpg)](https://youtu.be/2T-hKZsvTA8)
+*Vídeo 1: [Demonstração do Snapping e Movimentação de Marcadores](https://youtu.be/2T-hKZsvTA8)*
+
+### 1.6 Atualização do Merge Request
 
 As modificações de refatoração estrutural foram commitadas atualizando o merge request. O histórico manteve-se indexado à issue original (`BUG: 406887`) para fins de rastreabilidade de código e evolução de software.
 
@@ -101,3 +108,4 @@ As modificações de refatoração estrutural foram commitadas atualizando o mer
 | 1.2    | Adiciona seção de maiores dificuldades e aprendizados | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
 | 1.3    | Ajusta texto de seções do diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
 | 1.4    | Adiciona imagens no diario de bordo | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.5    | Adiciona vídeo da contribuição funcionando | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
