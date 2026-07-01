@@ -41,7 +41,7 @@ A Sprint 4 concentrou-se no refinamento e na adaptação de contribuições ante
 | Julia dos Reis Teixeira Massuda | *[Inserir contribuições]* | [Diário de Bordo](../contribuicoes_individuais/JuliaMassuda-231035150/sprint4.md) | Pendente |
 | João Pedro Rodrigues | *[Inserir contribuições]* | [Diário de Bordo](../contribuicoes_individuais/JoaoRodrigues-231035150/sprint4.md) | Pendente |
 | Karolina Vieira Barbosa | *[Inserir contribuições]* | [Diário de Bordo](../contribuicoes_individuais/KarolinaVieira-202045820/sprint4.md) | Pendente |
-| Letícia da Silva Monteiro | *[Inserir contribuições]* | [Diário de Bordo](../contribuicoes_individuais/LeticiaMonteiro-231026859/sprint4.md) | Pendente |
+| Letícia da Silva Monteiro | Revisão e reformulação do guia de contribuição do repositório, que anteriormente continha apenas orientações básicas e direcionava os colaboradores à documentação externa da KDE. A contribuição consistiu na elaboração de uma versão mais completa e organizada, reunindo as principais regras para criação de branches, escrita de commits, abertura de Issues e Merge Requests, modelo de branches e boas práticas de colaboração, mantendo um link para a documentação oficial com informações mais avançadas.  | [Diário de Bordo](../contribuicoes_individuais/LeticiaMonteiro-231026859/sprint4.md) | Concluído |
 | **Lucas Mendonça Arruda** | Refatoração da captura do mouse no QML, criação de funções no C++ para mover o marcador na tela sem salvar direto no histórico e integração do cálculo de snapping na timeline.| [Diário de Bordo](../contribuicoes_individuais/LucasArruda-231035464/Sprint4.md) | **Concluído** |
 
 ---
