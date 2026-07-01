@@ -53,9 +53,31 @@ As modificações de refatoração estrutural foram commitadas atualizando o mer
 
 ---
 
+## 2. Atividades Realizadas
 
-## 2. Histórico de Versões
+| Data  | Atividade | Tipo | Referência | Status    |
+| ----- | --------- | ---- | ---------- | --------- |
+| 10/06/2026 | Analisar a proposta de arquitetura de movimento enviada pelo mantenedor Jean | Estudo | [Link](https://invent.kde.org/multimedia/kdenlive/-/merge_requests/880) | Concluído |
+| 15/06/2026 | Mapear o comportamento e funções de snapping implementadas no `Ruler.qml` | Estudo | [Link](https://invent.kde.org/lucasma/kdenlive/-/blob/feat/move-clip-marker-with-mouse/src/timeline2/view/qml/Ruler.qml?ref_type=heads) | Concluído |
+| 21/06/2026 | Implementar o método C++ `moveClipMarkerWithoutUndo` no `TimelineController` | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/57b2d7f1b55111616023834541ef6351d97f0f73) | Concluído |
+| 22/06/2026 | Refatorar a captura de eventos de mouse e cálculo de deltas de frames no `Clip.qml` | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/57b2d7f1b55111616023834541ef6351d97f0f73) | Concluído |
+| 25/06/2026 | Integrar a mecânica de `suggestSnapPoint` ao fluxo de arrasto dos marcadores de clipe | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/57b2d7f1b55111616023834541ef6351d97f0f73) | Concluído |
+| 28/06/2026 | Commitar alterações para o Merge Request | Código | [Link](https://invent.kde.org/lucasma/kdenlive/-/commit/57b2d7f1b55111616023834541ef6351d97f0f73) | Concluído |
+| 30/06/2026 | Documentar diário de bordo da Sprint 4 | Documentação | [Link](https://github.com/caeslucio/GCES-Kdenlive-relatorios) | Concluído |
+
+---
+
+## 3. Maiores Avanços
+
+* **Cálculo de Snapping na Timeline:** Sucesso na implementação da mecânica para fazer o marcador alinhar-se ("grudar") aos pontos de referência da linha de tempo. Para isso, foi necessário converter a posição do mouse em pixels para quadros (frames) exatos do vídeo, considerando o nível de zoom atual e a taxa de FPS do projeto.
+
+* **Resolução de Problemas com Linters Estritos:** Compreensão do funcionamento e depuração do `qmllint` da KDE, que bloqueava a compilação por conta de escopos de variáveis não qualificados (`Unqualified access`). A resolução desse problema trouxe maior domínio sobre como o projeto organiza e valida o escopo de seus componentes QML.
+
+---
+
+## 4. Histórico de Versões
 
 | Versão | Descrição                                                      | Autor(es)                            | Data       | 
 |--------|----------------------------------------------------------------|--------------------------------------|------------|
-| 1.0    | Elaboração do relatório de diário de bordo referente à Sprint 4 | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.0    | Adiciona seção de resumo da sprint 4 | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
+| 1.1    | Adiciona seção de atividades realizadas e maiores avanços | [Lucas Mendonça](https://github.com/lucasarruda9) | 30/06/2026 |
