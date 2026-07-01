@@ -7,16 +7,6 @@
 **GitHub:** [@LeticiaMonteiroo](https://github.com/LeticiaMonteiroo)  
 **KDE Invent:** [@leticia](https://invent.kde.org/leticia)
 
-
-
-
-# Diário de Bordo – Sprint 1
-
-**Disciplina:** Gestão da Configuração e Evolução de Software (GCES)  
-**Projeto:** Contribuição para o repositório open source [KDE Kdenlive](https://invent.kde.org/multimedia/kdenlive)  
-**Área de contribuição:** Documentação de build e onboarding de desenvolvimento  
-**Responsável:** Letícia Monteiro  
-
 ---
 
 ## Sobre a Contribuição
