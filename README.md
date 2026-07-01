@@ -47,7 +47,7 @@ Site: [https://kdenlive.org/](https://kdenlive.org/)
 | Julia dos Reis Teixeira Massuda  | 231035150 | [@JuliaReis18](https://github.com/JuliaReis18)| [@juliamassuda](https://invent.kde.org/juliamassuda)|
 | João Pedro Rodrigues             | 231026966 | [@JpRodrigues2](https://github.com/JpRodrigues2)| [@joaorodrigues](https://invent.kde.org/joaorodrigues) |
 | Karolina Vieira Barbosa          | 202045820 | [@Karolina91](https://github.com/Karolina91)|  [@karovieira](https://invent.kde.org/karovieira)                                          |
-| Letícia da Silva Monteiro        | 231026859 | [@LetíciaMonteiro](https://github.com/LeticiaMonteiroo) | –                                              |
+| Letícia da Silva Monteiro        | 231026859 | [@LetíciaMonteiro](https://github.com/LeticiaMonteiroo) | [@leticia](https://invent.kde.org/leticia)                                              |
 | Lucas Mendonça Arruda            | 231035464 | [@lucasarruda9](https://github.com/lucasarruda9) | [@lucasma](https://invent.kde.org/lucasma)                                              |
 | Gustavo Oki de Freitas Rodrigues | 231034716 | [@GustOki](https://github.com/GustOki)                                          | [@gustoki](https://invent.kde.org/gustoki)                                              |
 
