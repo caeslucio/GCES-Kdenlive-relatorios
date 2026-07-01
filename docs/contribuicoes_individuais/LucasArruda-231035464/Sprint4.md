@@ -3,16 +3,16 @@
 **Disciplina:** GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE  
 **Equipe:** GCES 2026.1 – Kdenlive  
 **Comunidade/Projeto de Software Livre:** [Kdenlive](https://invent.kde.org/multimedia/kdenlive)  
-**Sprint:** Sprint 4 (08/06/2026 – 30/06/2026)  
+**Sprint:** Sprint 4 (09/06/2026 – 30/06/2026)  
 **Matrícula:** 231035464   
 **GitHub:** [@lucasarruda](https://github.com/lucasarruda9)  
 **KDE Invent:** [@lucasma](https://invent.kde.org/lucasma)
 
 ---
 
-## 1. Resumo da Sprint 4 (08/06/2026 - 30/06/2026)
+## 1. Resumo da Sprint 4 (09/06/2026 - 30/06/2026)
 
-A Sprint 4 foi focada na evolução e refinamento do Merge Request iniciado nas sprints anteriores para o Kdenlive (**BUG 406887**). Após implementar a funcionalidade base de arrasto de marcadores de clipe (Sprint 2) e o suporte ao sistema de histórico Undo/Redo (Sprint 3), o trabalho nesta sprint concentrou-se em reestruturar completamente a abordagem técnica com base no feedback arquitetural dos mantenedores.
+O foco da Sprint 4 foi a evolução e o refinamento do Merge Request para o Kdenlive (**BUG 406887**). Após a implementação do arrasto básico dos marcadores (Sprint 2) e do sistema de Undo/Redo (Sprint 3), esta sprint concentrou-se em reestruturar a abordagem técnica para atender às últimas exigências arquiteturais feitas pelos mantenedores. Esse processo de ajuste foi basicamente a etapa final de validação do código, preparando a contribuição para aprovação e integração definitiva na branch `master` do repositório principal.
 
 ### 1.1 Acompanhamento e Feedback do MR #880
 
