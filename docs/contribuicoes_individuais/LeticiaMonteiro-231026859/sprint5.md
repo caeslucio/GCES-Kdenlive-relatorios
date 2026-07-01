@@ -10,13 +10,7 @@
 
 ## 1. Resumo da Sprint
 
-Durante esta sprint, o principal objetivo foi preparar o ambiente de desenvolvimento para contribuir com o projeto Kdenlive e compreender sua estrutura de desenvolvimento.
-
-Inicialmente, foram realizadas diversas tentativas de configuração do ambiente utilizando o WSL com Ubuntu. Entretanto, devido à incompatibilidade entre as versões das dependências exigidas pelo projeto (principalmente Qt6, KDE Frameworks e MLT) e os pacotes disponíveis na distribuição utilizada, tornou-se inviável prosseguir por esse caminho.
-
-Após analisar a documentação oficial do projeto e compreender melhor os requisitos de compilação, foi adotada uma nova estratégia utilizando o Arch Linux no WSL, permitindo instalar versões mais recentes das bibliotecas necessárias. Com isso, foi possível compilar o Kdenlive com sucesso e executar a aplicação localmente.
-
-Além da configuração do ambiente, foi realizada uma análise da documentação destinada aos desenvolvedores. Durante essa análise foi identificado que o arquivo `coding.md`, apesar de conter informações importantes, apresentava descrições bastante resumidas sobre alguns conceitos fundamentais do projeto.
+Durante a análise da documentação feita essa semana foi identificado que o arquivo `coding.md`, apesar de conter informações importantes, apresentava descrições bastante resumidas sobre alguns conceitos fundamentais do projeto.
 
 Como proposta de melhoria, foi elaborada uma nova versão desse documento, mantendo seu propósito original, porém ampliando as explicações sobre as principais tecnologias utilizadas pelo Kdenlive, regras importantes de desenvolvimento e boas práticas para novos contribuidores.
 
@@ -28,33 +22,20 @@ Como proposta de melhoria, foi elaborada uma nova versão desse documento, mante
 
 | Data | Atividade | Tipo | Link/Referência | Status |
 |------|-----------|------|-----------------|--------|
-| — | Estudo da documentação oficial do Kdenlive | Estudo | README e documentação oficial | Concluído |
-| — | Configuração inicial do ambiente utilizando WSL (Ubuntu) | Configuração | Ambiente local | Concluído |
-| — | Pesquisa e resolução de problemas relacionados às dependências do projeto | Pesquisa | Documentação oficial | Concluído |
-| — | Migração do ambiente para Arch Linux no WSL | Configuração | Ambiente local | Concluído |
-| — | Compilação completa do Kdenlive utilizando CMake e Ninja | Código | Ambiente local | Concluído |
-| — | Execução da aplicação compilada | Teste | Ambiente local | Concluído |
-| — | Estudo da documentação para desenvolvedores | Documentação | `coding.md` | Concluído |
-| — | Elaboração de proposta de melhoria para o arquivo `coding.md` | Documentação | Pull Request (em elaboração) | Em andamento |
+| 28/06 | Estudo da documentação para desenvolvedores | Documentação | `coding.md` | Concluído |
+| 28/06 | Elaboração de proposta de melhoria para o arquivo `coding.md` | Documentação | Pull Request (em elaboração) | Em andamento |
 
 ---
 
 ## 3. Maiores Avanços
 
-- Configuração completa do ambiente de desenvolvimento para o Kdenlive.
-- Compreensão do processo de compilação utilizando CMake e Ninja.
-- Entendimento da organização geral do repositório.
-- Familiarização com as principais tecnologias utilizadas pelo projeto, como Qt6, KDE Frameworks e MLT.
 - Identificação de uma oportunidade de melhoria na documentação técnica destinada aos desenvolvedores.
 
 ---
 
 ## 4. Maiores Dificuldades
 
-- Configurar corretamente o ambiente de desenvolvimento devido às diversas dependências exigidas pelo projeto.
-- Resolver incompatibilidades entre versões das bibliotecas disponíveis no Ubuntu e aquelas requeridas pelo Kdenlive.
-- Compreender a relação entre o WSL, as distribuições Linux e o ambiente de compilação.
-- Entender o fluxo de build do projeto utilizando CMake e Ninja.
+- Conhecer todas as regras para contribuir com a comunidade que já a maior parte está fora do Gitlab 
 
 ---
 
@@ -62,10 +43,7 @@ Como proposta de melhoria, foi elaborada uma nova versão desse documento, mante
 
 Durante esta sprint foram adquiridos diversos conhecimentos relacionados ao desenvolvimento de projetos de software livre, entre eles:
 
-- Processo de compilação utilizando CMake e Ninja.
 - Estrutura geral do projeto Kdenlive.
-- Funcionamento do MLT como motor de processamento multimídia.
-- Papel do Qt6 e dos KDE Frameworks dentro da aplicação.
 - Importância da documentação técnica para facilitar a entrada de novos colaboradores.
 - Fluxo básico de contribuição para projetos open source.
 
@@ -103,4 +81,3 @@ Além disso, uma documentação mais completa contribui para padronizar futuras 
 - [ ] Submeter um Pull Request com a melhoria da documentação.
 - [ ] Participar das discussões da comunidade relacionadas à documentação.
 - [ ] Estudar com maior profundidade a arquitetura interna do Kdenlive.
-- [ ] Identificar uma issue de baixa complexidade para realizar a primeira contribuição em código.
